@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="960.0" style="-fx-background-color: #0e3244;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CustomerController">
+   <children>
+      <Label layoutX="41.0" layoutY="38.0" prefHeight="27.0" prefWidth="68.0" text="Hello," textFill="#bae3f7">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font></Label>
+      <Label layoutX="368.0" layoutY="94.0" prefHeight="27.0" prefWidth="196.0" text="Services" textFill="#bae3f7">
+         <font>
+            <Font name="Bodoni MT Condensed Bold" size="70.0" />
+         </font>
+      </Label>
+      <Label fx:id="customerName" layoutX="87.0" layoutY="38.0" prefHeight="27.0" prefWidth="209.0" textFill="#bae3f7">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backPage" layoutX="832.0" layoutY="664.0" mnemonicParsing="false" onAction="#backPageBtn" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: #FF84A7;" text="Back" textFill="#0c3344">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font></Button>
+      <Button fx:id="book" layoutX="406.0" layoutY="562.0" mnemonicParsing="false" onAction="#bookAppointment" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: #FF84A7;" text="Book" textFill="#0c3344">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font></Button>
+      <DatePicker fx:id="datePicker" layoutX="456.0" layoutY="367.0" onAction="#initTimeCmb" opacity="0.8" prefHeight="37.0" prefWidth="209.0" />
+      <Label layoutX="296.0" layoutY="375.0" prefHeight="21.0" prefWidth="106.0" text="Choose Date:" textFill="#bae3f7">
+         <font>
+            <Font name="Berlin Sans FB" size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbAppTime" layoutX="456.0" layoutY="457.0" prefHeight="37.0" prefWidth="209.0" />
+      <Label layoutX="296.0" layoutY="465.0" prefHeight="21.0" prefWidth="106.0" text="Chooes Time:" textFill="#bae3f7">
+         <font>
+            <Font name="Berlin Sans FB" size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbHaircut" layoutX="456.0" layoutY="275.0" onAction="#initDatePicker" prefHeight="37.0" prefWidth="209.0" />
+      <Label layoutX="296.0" layoutY="283.0" prefHeight="21.0" prefWidth="129.0" text="Choose Haircut:" textFill="#bae3f7">
+         <font>
+            <Font name="Berlin Sans FB" size="19.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="14.0" layoutY="37.0">
+         <image>
+            <Image url="@../../../../Desktop/Project/user.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.65" contrast="-1.0" hue="0.05" saturation="-1.0" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
